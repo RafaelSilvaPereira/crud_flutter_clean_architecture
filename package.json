@@ -1,0 +1,14 @@
+{
+  "name": "crud_flutter_clean_architecture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RafaelSilvaPereira/crud_flutter_clean_architecture.git",
+  "author": "Rafael S. Pereira <rafael.professional2019@gmail.co,>",
+  "scripts": {
+    "md": "node node_modules/module_creator/main.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "module_creator": "^1.1.2"
+  }
+}
