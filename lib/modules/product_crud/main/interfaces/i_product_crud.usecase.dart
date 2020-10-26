@@ -1,10 +1,12 @@
-import '../domain/index.dart';
-
-import 'package:dartz/dartz.dart';
 import 'package:meta/meta.dart';
 
-abstract class IProductCrudUsecase {
-  Future<bool> call(ProductEntity p);
-}
+import '../domain/index.dart';
+import '../domain/models/product.model.dart';
 
-main() {}
+abstract class IProductCrudUsecase {
+  Future<String> create({@required ProductModel productModel});
+  Future<List<ProductEntity>> read();
+  Future<ProductEntity> readOne({@required String id});
+  Future<ProductEntity> edit({@required String id, Map<String, dynamic> data});
+  Future<String> delete({@required String id});
+}
